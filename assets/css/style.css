@@ -1,0 +1,65 @@
+
+/* Toggle styling */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .toggle-slider {
+    background-color: #007cba;
+}
+input:checked + .toggle-slider:before {
+    transform: translateX(14px);
+}
+/* Layout improvements */
+.plugin-column {
+    padding: 5px;
+    max-width: 80%;
+}
+.toggle-column {
+    padding: 5px;
+    width: 5%;
+    text-align: center;
+}
+.table-container {
+    margin: 20px 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table-container th,
+.table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table-container th {
+    text-align: left;
+    background-color: #f4f4f4;
+}
