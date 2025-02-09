@@ -1,0 +1,6 @@
+# Exclude VS Code settings and other related files
+.vscode/
+*.code-workspace
+
+# Exclude the 'chat-gpt' folder (and all its contents) in the root of the workspace
+/chat-gpt/
